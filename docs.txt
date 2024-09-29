@@ -1,0 +1,8 @@
+I run the code on google colab 
+
+here i used this 2 command line 
+
+!python train.py ./flowers --save_dir ./save_directory/checkpoint.pth --arch "vit_b_16" --learning_rate 0.001 --hidden_units 512 --epochs 30 --gpu
+
+
+!python predict.py ./flowers/test/10/image_07090.jpg ./save_directory/checkpoint.pth --top_k 5 --category_names ./cat_to_name.json --gpu
